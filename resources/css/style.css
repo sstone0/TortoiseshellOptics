@@ -1,0 +1,256 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+.header-wrapper {
+  padding-top: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: cadetblue;
+  font-size: 1rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+nav span {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 1rem 0 1rem 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner-head-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: static;
+  margin-right: -2rem;
+  margin-top: 10rem;
+}
+
+.banner-head-wrapper h1 {
+  color: black;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  width: auto;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 3rem 0;
+  justify-content: center;
+}
+
+.service {
+  width: 5rem;
+  height: 8rem;
+  margin: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+#img1 {
+  width: 3.5rem;
+  height: auto;
+}
+
+#img2 {
+  padding: 0 5rem 0 5rem;
+}
+
+.service-image-width {
+  width: 5rem;
+  height: auto;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35%;
+}
+
+.about h3 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+#par1 {
+  margin-right: 5%;
+}
+
+footer {
+  background-color: azure;
+  margin: 5rem auto 0;
+  padding: 4rem 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    height: 22rem;
+  }
+  .header-wrapper {
+    padding-top: 0;
+  }
+  .header {
+    margin-top: 0;
+  }
+  .banner-head-wrapper {
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+  .banner-head-wrapper h1 {
+    padding: 0.75rem 4rem 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  #title {
+    display: none;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav span {
+    display: inline;
+    padding: 1rem 0 1rem 0;
+    color: white;
+  }
+  .banner-head-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-top: 9rem;
+    background: white;
+  }
+  .banner-head-wrapper h1 {
+    padding: 1rem 0 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0 3.77rem 0;
+  }
+  .service {
+    margin-top: 1.54rem;
+  }
+  .service p {
+    font-size: 0.77rem;
+    line-height: 2;
+  }
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .about p {
+    font-size: 0.77rem;
+    padding-left: .5rem;
+  }
+  .about h3 {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  footer {
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  footer span {
+    display: none;
+  }
+}
